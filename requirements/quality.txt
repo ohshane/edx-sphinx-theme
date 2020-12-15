@@ -6,26 +6,25 @@
 #
 argparse==1.4.0           # via caniusepython3
 astroid==1.4.8            # via pylint, pylint-celery, pylint-plugin-utils
-caniusepython3==4.0.0
+caniusepython3==4.0.0     # via -r quality.in
+certifi==2020.12.5        # via requests
+chardet==3.0.4            # via requests
 colorama==0.3.7           # via pylint
 distlib==0.2.4            # via caniusepython3
-edx-lint==0.5.1
+edx-lint==0.5.1           # via -r quality.in
 futures==3.0.5            # via caniusepython3
-isort==4.2.5
+idna==2.7                 # via requests
+isort==4.2.5              # via -r quality.in
 lazy-object-proxy==1.2.2  # via astroid
 packaging==16.7           # via caniusepython3
-pycodestyle==2.0.0
-pydocstyle==1.1.1
+pycodestyle==2.0.0        # via -r quality.in
+pydocstyle==1.1.1         # via -r quality.in
 pylint-celery==0.3        # via edx-lint
 pylint-django==0.7.2      # via edx-lint
 pylint-plugin-utils==0.2.4  # via pylint-celery, pylint-django
 pylint==1.5.4             # via edx-lint, pylint-celery, pylint-django, pylint-plugin-utils
 pyparsing==2.1.9          # via packaging
-requests==2.11.1          # via caniusepython3
+requests==2.20.0          # via caniusepython3
 six==1.10.0               # via astroid, edx-lint, packaging, pylint
+urllib3==1.24.3           # via requests
 wrapt==1.10.8             # via astroid
-
-# The following packages are commented out because they are
-# considered to be unsafe in a requirements file:
-# pip                       # via caniusepython3
-# setuptools                # via caniusepython3

@@ -5,11 +5,15 @@
 #    pip-compile --output-file requirements/travis.txt requirements/travis.in
 #
 argparse==1.4.0           # via codecov
-codecov==2.0.5
+certifi==2020.12.5        # via requests
+chardet==3.0.4            # via requests
+codecov==2.0.5            # via -r travis.in
 coverage==4.2             # via codecov
+idna==2.7                 # via requests
 pluggy==0.3.1             # via tox
 py==1.4.31                # via tox
-requests==2.11.1          # via codecov
-tox-battery==0.2
-tox==2.3.1
+requests==2.20.0          # via codecov
+tox-battery==0.2          # via -r travis.in
+tox==2.3.1                # via -r travis.in, tox-battery
+urllib3==1.24.3           # via requests
 virtualenv==15.0.3        # via tox
